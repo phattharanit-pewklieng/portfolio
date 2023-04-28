@@ -1,0 +1,51 @@
+.select{
+  display: flex;
+  justify-content: center;
+  gap:1rem;
+  margin-bottom: 5rem;
+
+  button{
+    color: navy;
+    background: #fff;
+    padding: 0.65rem 1rem;
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-family: 'Poppins';
+    border-radius: 10px;
+
+    &.active {
+      background: #b47561;
+      color: #000;
+    }
+  }
+}
+.skills{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  min-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 4rem;
+
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    
+    svg{
+      width: 110px;
+      height: 110px;
+      color: #000;
+      border-radius: 50%;
+      
+    }
+  }
+}

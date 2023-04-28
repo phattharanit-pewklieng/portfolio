@@ -17,13 +17,15 @@ function About() {
         </div>
         <div className="about_right">
           <p>
-            I've always been passionate about web development, but my previous
-            job as a manager gave me valuable skills in problem-solving,
-            communication, feedback and teamwork. I particularly enjoyed working
-            with the web application we used for online ordering, and found it
-            fascinating to troubleshoot and fix errors. This experience fueled
-            my desire to become a web developer myself, and motivated me to
-            enrol at Dev Academy to pursue my dream.
+            I'm a Software Developer with a passion for problem-solving and a
+            proven track record of successful teamwork. I have experience in
+            technical support and a basic understanding of hardware and
+            software. My background as a Store Manager in retail has also
+            equipped me with valuable management skills. Currently, I am honing
+            my skills as a full-stack web developer at Dev Academy. My expertise
+            includes JavaScript, React, Redux, Node.js, HTML, CSS, and RESTful
+            APIs. I am dedicated to expanding my knowledge and skills in this
+            field and thrive on taking on new challenges.
           </p>
           {bios.map((bio) => {
             return (
