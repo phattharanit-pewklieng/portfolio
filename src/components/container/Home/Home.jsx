@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.scss'
 import portfolio from '../../../assets/phatt-img.jpeg'
-
+import { motion } from 'framer-motion'
 function Home() {
   return (
     <div className="container" id="home">
@@ -21,7 +21,13 @@ function Home() {
           about crafting innovative <br />
           web products <br />
         </span>
-        <a href="contact">connect with me</a>
+        <motion.a
+          href="contact"
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.3 }}
+        >
+          connect with me
+        </motion.a>
         <div className="web">Web Developer</div>
         <div className="ui">UI/UX Designer</div>
         <div className="freelance">Freelance</div>
