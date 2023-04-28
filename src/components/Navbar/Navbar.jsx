@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Navbar.scss'
 import { navLinks } from '../../Data'
 import { socialIcons } from '../../Data'
@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 function Navbar() {
   const [toggle, setToggle] = useState(false)
-
+  const [scroll, setScroll] = useState(false)
   const menuVariant = {
     hidden: { scale: 0 },
     visible: { scale: 50, transition: { type: 'tween', duration: 0.5 } },
@@ -17,8 +17,14 @@ function Navbar() {
     hidden: { display: 'none', opacity: 0 },
     visible: { opacity: 1, y: -30, transition: { delay: 0.7 } },
   }
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setScroll(window.scrollY > 20)
+    })
+  }, [])
   return (
-    <div className="header">
+    <div className={scroll ? "header active" : "header"}>
       <div className="Nav_container">
         <div className="logo">
           <h3>Phatt</h3>
@@ -28,7 +34,7 @@ function Navbar() {
           {navLinks.map((navLink, index) => {
             return (
               <li key={index}>
-                <a href={`${navLink}`}>{navLink}</a>
+                <a href={`#${navLink}`}>{navLink}</a>
               </li>
             )
           })}
@@ -63,8 +69,13 @@ function Navbar() {
           />
           {navLinks.map((navLink, index) => {
             return (
-              <li key={index}>
-                <a href={`${navLink}`}>{navLink}</a>
+              <li
+                key={index}
+                onClick={() => {
+                  setToggle(false)
+                }}
+              >
+                <a href={`#${navLink}`}>{navLink}</a>
               </li>
             )
           })}

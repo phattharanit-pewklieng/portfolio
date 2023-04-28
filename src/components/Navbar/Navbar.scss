@@ -1,12 +1,15 @@
-body{
-  background-color: #d4c4bc;
-}
+
 .header{
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 10;
+
+  &.active {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+}
 
   .Nav_container {
     position: relative;
@@ -27,17 +30,20 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
+        opacity: 0.6;
     }
+
     .nav_links {
       display: flex;
       list-style: none;
 
-      @media screen and (max-width : 800px) {
-        display: none;
-      }
-
       li{
         margin-left: 3rem;
+
+        @media screen and (max-width : 800px) {
+          display: none;
+        }
 
         a{
           text-decoration: none;
@@ -45,11 +51,10 @@ body{
           color: #573e37;
           text-transform: uppercase;
           font-size: 1.1rem;
-          opacity: 0.6;
-          transition: 3s;
+          opacity: 1;
           
           &:hover {
-            opacity: 1;
+            opacity: 0.6;
           }
 
         }
@@ -58,7 +63,7 @@ body{
     .social_icons{
       display: flex;
 
-      @media screen and (max-width : 800px){
+      @media screen and (max-width: 800px){
         display: none;
       }
 
@@ -68,13 +73,13 @@ body{
         svg {
           color: #2e3e72;
           font-size: 2rem;
-          opacity: 0.6;
+          opacity: 1;
           cursor: pointer;
           transition: 0.3s;
-          
+          z-index: 5;
 
           &:hover{
-            opacity: 1;
+            opacity: 0.6;
           }
         }
       }
@@ -84,11 +89,12 @@ body{
       width: 35px;
       height: 35px;
       border-radius: 50%;
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      cursor: pointer;
       display: none;
+      cursor: pointer;
 
       @media screen and (max-width: 800px) {
         display: block;
@@ -101,17 +107,15 @@ body{
         width: 70%;
         height: 70%;
       }
-
     }
     .closeMenu {
       background: #573e37;
       width: 4rem;
       height: 4rem;
       position: fixed;
-      border-radius: 50%;
       right: 0;
       top: 0;
-
+      border-radius: 50%;
     }
 .menuX{
 color: #fff;
@@ -131,7 +135,7 @@ svg{
   height: 1.5rem;
   position: absolute;
   top: 2rem;
-  right: 2rem;
+  right: 5rem;
 
 }
 li{
@@ -144,6 +148,7 @@ li{
     font-size: 1.5rem;
     opacity: 0.6;
     text-transform: uppercase;
+    transition: all 0.3s ease;
 
     &:hover{
       opacity: 1;
