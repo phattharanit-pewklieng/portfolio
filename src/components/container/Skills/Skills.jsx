@@ -1,16 +1,25 @@
 import React, { useState } from 'react'
 import './Skills.scss'
 import { icons, experiences, finishes } from '../../../Data'
+import { motion } from 'framer-motion';
 
 function Skills() {
   const [active, setActive] = useState(1)
   return (
     <div className="container" id="skills">
-      <div className="title">
+       <motion.div
+        initial={{opacity: 0}}
+        whileInView={{y: [-50, 0], opacity: 1}}  
+        className="title"
+      >
         <span>What I Expert</span>
         <h1>Skills And Experience</h1>
-      </div>
-      <div className="select">
+        </motion.div>
+      <motion.div
+        initial={{opacity: 0}}
+        whileInView={{y: [-50, 0], opacity: 1}}
+        className="select"
+      >
         <button
           onClick={() => {
             setActive(1)
@@ -27,8 +36,12 @@ function Skills() {
         >
           Experience
         </button>
-      </div>
-      <div className="skills">
+        </motion.div>
+      <motion.div
+        initial={{opacity: 0}}
+        whileInView={{y: [-50, 0], opacity: 1}}
+        className="skills"
+      >
         {active === 1 &&
           icons.map((icon, index) => {
             return (
@@ -37,8 +50,12 @@ function Skills() {
               </div>
             )
           })}
-      </div>
-      <div className="experiences">
+        </motion.div>
+      <motion.div
+        initial={{opacity: 0}}
+        whileInView={{y: [-50, 0], opacity: 1}}
+        className="experiencs"
+      >
       {active === 2 && experiences.map(experience => {
           return (
             <div className="experience" key={experience.id}>
@@ -50,7 +67,21 @@ function Skills() {
             </div>
           )
         })}
-      </div>
+       </motion.div>
+      <motion.div
+        initial={{opacity: 0}}
+        whileInView={{y: [-50, 0], opacity: 1}}
+        className="finishes_container"
+      >
+        {finishes.map(finish => {
+        return (
+          <div className='finishes' key={finish.id}>
+            <div className='number'>{finish.number}</div>
+            <h4 className='item_name'>{finish.itemName }</h4>
+          </div>
+          )
+        })}
+      </motion.div>
     </div>
   )
 }

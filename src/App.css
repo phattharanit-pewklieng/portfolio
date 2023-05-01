@@ -29,6 +29,7 @@ img {
 }
 .title span {
   color: #2a54d9;
+  text-shadow: 1px 1px #9db4f4;
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 800;

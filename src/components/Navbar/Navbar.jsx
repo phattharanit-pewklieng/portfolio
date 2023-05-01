@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 function Navbar() {
   const [toggle, setToggle] = useState(false)
   const [scroll, setScroll] = useState(false)
+  
   const menuVariant = {
     hidden: { scale: 0 },
     visible: { scale: 50, transition: { type: 'tween', duration: 0.5 } },
@@ -24,12 +25,15 @@ function Navbar() {
     })
   }, [])
   return (
-    <div className={scroll ? "header active" : "header"}>
+    <motion.div
+          initial={{ y: -25 }}
+          animate={{ y: -5 }}
+          transition={{duration: 0.5}}
+          className={scroll ? "header active" : "header"}>
       <div className="Nav_container">
         <div className="logo">
           <h3>Phatt</h3>
         </div>
-
         <ul className="nav_links">
           {navLinks.map((navLink, index) => {
             return (
@@ -79,9 +83,9 @@ function Navbar() {
               </li>
             )
           })}
-        </motion.div>
-      </div>
-    </div>
+              </motion.div>
+          </div>
+    </motion.div>
   )
 }
 

@@ -50,6 +50,7 @@
     .social_icons{
       display: flex;
       margin-top: 1.40rem;
+      
   
       div{
         margin-right: 1rem;
@@ -58,10 +59,12 @@
 
         &:hover{
           opacity: 0.8;
+          color: #9db4f4;
         }
 
         svg{
           font-size: 1.3rem;
+         
         }
       }
     }
@@ -71,6 +74,7 @@
     h3{
       font-size: 1.5rem;
       margin-bottom: 1rem;
+      
     }
 
     .row {

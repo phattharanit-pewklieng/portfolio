@@ -17,10 +17,10 @@ import { DiJavascript } from 'react-icons/di'
 import { SiTypescript } from 'react-icons/si'
 import { BsMedium } from 'react-icons/bs'
 // import portfolio from "./assets/portfolio.jpg"
-import web1 from "./assets/web1.png";
-import web2 from "./assets/web2.png";
-import web3 from "./assets/web3.png";
-import web4 from "./assets/web4.png";
+import web1 from './assets/web1.png'
+import web2 from './assets/web2.png'
+import web3 from './assets/web3.png'
+import web4 from './assets/web4.png'
 // import work5 from "./assets/work5.png";
 // import work6 from "./assets/work6.png";
 
@@ -117,44 +117,31 @@ export const workImages = [
   {
     id: 1,
     img: web1,
-    name: "project 1",
-    category: "web"
+    name: 'project 1',
+    category: 'web',
   },
 
   {
     id: 2,
     img: web2,
-    name: "project 2",
-    category: "web"
+    name: 'project 2',
+    category: 'web',
   },
   {
     id: 3,
     img: web3,
-    name: "project 3",
-    category: "app"
+    name: 'project 3',
+    category: 'app',
   },
   {
     id: 4,
     img: web4,
-    name: "project 4",
-    category: "app"
-  }
+    name: 'project 4',
+    category: 'group project',
+  },
 ]
-//   {
-//     id: 5,
-//     img: work5,
-//     name: "project 5",
-//     category: 'app'
-//   },
-//   {
-//     id: 6,
-//     img: work6,
-//     name: "project 6",
-//     category: "design"
-//   }
-// ]
 
-export const workNavs = ['All', 'Web', 'App', 'Design']
+export const workNavs = ['All', 'Web', 'App', 'Design', 'Group Project']
 
 export const contacts = [
   {

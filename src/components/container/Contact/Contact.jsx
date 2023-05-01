@@ -13,7 +13,10 @@ function Contact() {
         <h1>Contact Me</h1>
       </motion.div>
       <div className="contact_form">
-        <div className="contact_left_container">
+      <motion.div
+          initial={{x: 0, opacity: 0}}
+          whileInView={{ x: [-150,0], opacity: 1 }}
+          transition={{duration: 1}} className="contact_left_container">
           <h3>Just Say Hi!</h3>
           <p className='contact_text'>
             Thank you for visiting my portfolio! If you have any questions or
@@ -36,10 +39,12 @@ function Contact() {
               <div key={index}>{socialIcon}</div>
               )
             })}
-          </div>
-          </div>
-        
-            <div className="contact_right">
+           </div>
+        </motion.div>
+        <motion.div
+          initial={{x: 0, opacity: 0}}
+          whileInView={{ x: [150,0], opacity: 1 }}
+          transition={{duration: 1}} className="contact_right">
               <h3>Get In Touch</h3>
               <div className="row">
                 <input type="text" placeholder="First Name" />
@@ -56,7 +61,7 @@ function Contact() {
             <motion.div className="btn" whileHover={{scale:1.1}} transition={{duration:0.3}}>
               <a href="#">Send</a>
             </motion.div>
-          </div>
+            </motion.div>
         </div>
       </div>
     

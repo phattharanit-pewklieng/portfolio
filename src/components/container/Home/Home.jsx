@@ -3,8 +3,29 @@ import './Home.scss'
 import portfolio from '../../../assets/phatt-img.jpeg'
 import { motion } from 'framer-motion'
 function Home() {
+  const moveVariants = {
+    animation: {
+      y: [0, -15],
+      transition: {
+        yoyo: Infinity,
+        duration: 2,
+        delay: 1
+      }
+
+    }
+  }
+
   return (
-    <div className="container" id="home">
+    <motion.div className="container " id='home'
+    initial={{ y: -15, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={
+      {
+        duration: 2,
+        delay: 0.5
+      }
+    }
+  >
       <div className="profile">
         <img src={portfolio} alt="portfolio-img" />
       </div>
@@ -22,9 +43,10 @@ function Home() {
           web products <br />
         </span>
         <motion.a
-          href="contact"
+          href="#contact"
           whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.3 }}
+          variants={moveVariants}
+          animate="animation"
         >
           connect with me
         </motion.a>
@@ -32,7 +54,7 @@ function Home() {
         <div className="ui">UI/UX Designer</div>
         <div className="freelance">Freelance</div>
       </div>
-    </div>
+      </motion.div>
   )
 }
 
