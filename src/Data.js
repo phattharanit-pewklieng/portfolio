@@ -160,16 +160,16 @@ export const contacts = [
   {
     id: 1,
     icon: <FaMapMarkerAlt />,
-    infoText: '16 Road, TharKayTa , Yangon',
+    infoText: 'Auckland CBD, New Zealand 1010',
   },
   {
     id: 2,
     icon: <FaPaperPlane />,
-    infoText: 'abee02@gmail.com',
+    infoText: 'phattharanit.noei@gmail.com',
   },
   {
     id: 3,
     icon: <FaPhoneAlt />,
-    infoText: '+959-883-271-929',
+    infoText: '+64 210253921',
   },
 ]
