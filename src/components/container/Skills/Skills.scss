@@ -5,7 +5,7 @@
   margin-bottom: 5rem;
 
   button{
-    color: navy;
+    color: #5c3c24;
     background: #fff;
     padding: 0.65rem 1rem;
     border: none;
@@ -14,26 +14,28 @@
     font-size: 0.85rem;
     font-family: 'Poppins';
     border-radius: 10px;
+   
 
     &.active {
-      background: #b47561;
-      color: #000;
+      background: #a47b5f;
+      color: #fff;
     }
   }
 }
+
 .skills{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   justify-content: center;
-  min-width: 700px;
   margin-left: auto;
+  max-width: 700px;
   margin-right: auto;
   row-gap: 4rem;
 
   @media screen and (max-width: 500px) {
     grid-template-columns: repeat(2,1fr);
     gap: 2rem;
-    
+
   }
 
   .icon {
@@ -41,11 +43,56 @@
     justify-content: center;
     
     svg{
-      width: 110px;
-      height: 110px;
-      color: #000;
-      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      color: #573e37;
+      border-radius: 30%;
       
     }
+  }
+}
+
+.experiences {
+  min-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #573e37;
+
+  .experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    span{
+      font-size: 1.40rem;
+      padding-left: 1.5rem;
+
+      @media screen and (max-width: 405px) {
+        font-size: 1rem;
+      }
+      
+    }
+    .position{
+      width: 300px;
+      padding-left: 2.5rem;
+
+      h3{
+        font-size: 1.1rem;
+
+        @media screen and (max-width: 405px) {
+          font-size: 0.85rem;
+        }
+      }
+      p{
+        font-size: 0.75rem;
+        opacity: 0.7;
+
+        @media screen and (max-width: 405px) {
+          font-size: 0.65rem;
+        }
+      }
+    }
+
   }
 }

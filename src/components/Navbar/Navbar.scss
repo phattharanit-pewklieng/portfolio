@@ -9,114 +9,117 @@
   &.active {
     background: rgba(255,255,255,0.15);
     backdrop-filter: blur(10px);
+
 }
 
-  .Nav_container {
-    position: relative;
-    max-width: 1224px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.2rem 2rem ;
-    margin-left: auto;
-    margin-right: auto;
+
+}
+.Nav_container {
+  position: relative;
+  max-width: 1224px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem ;
+  margin-left: auto;
+  margin-right: auto;
 
 
-    .logo{
-        background: #fff;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        opacity: 0.6;
-    }
-
-    .nav_links {
-      display: flex;
-      list-style: none;
-
-      li{
-        margin-left: 3rem;
-
-        @media screen and (max-width : 800px) {
-          display: none;
-        }
-
-        a{
-          text-decoration: none;
-          font-weight: bold;
-          color: #573e37;
-          text-transform: uppercase;
-          font-size: 1.1rem;
-          opacity: 1;
-          
-          &:hover {
-            opacity: 0.6;
-          }
-
-        }
-      }
-    }
-    .social_icons{
-      display: flex;
-
-      @media screen and (max-width: 800px){
-        display: none;
-      }
-
-      div{
-        margin-left: 1rem;
-
-        svg {
-          color: #2e3e72;
-          font-size: 2rem;
-          opacity: 1;
-          cursor: pointer;
-          transition: 0.3s;
-          z-index: 5;
-
-          &:hover{
-            opacity: 0.6;
-          }
-        }
-      }
-    }
-    .menu {
+  .logo{
       background: #fff;
-      width: 35px;
-      height: 35px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
-      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      display: none;
       cursor: pointer;
+      opacity: 0.6;
+  }
 
-      @media screen and (max-width: 800px) {
-        display: block;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  .nav_links {
+    display: flex;
+    list-style: none;
+
+    li{
+      margin-left: 3rem;
+
+      @media screen and (max-width : 800px) {
+        display: none;
       }
+
+      a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #573e37;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        opacity: 1;
+        
+        &:hover {
+          opacity: 0.6;
+        }
+
+      }
+    }
+  }
+  .social_icons{
+    display: flex;
+
+    @media screen and (max-width: 800px){
+      display: none;
+    }
+
+    div{
+      margin-left: 1rem;
 
       svg {
-        width: 70%;
-        height: 70%;
+        color: #2e3e72;
+        font-size: 2rem;
+        opacity: 1;
+        cursor: pointer;
+        transition: 0.3s;
+        z-index: 5;
+
+        &:hover{
+          opacity: 0.6;
+        }
       }
     }
-    .closeMenu {
-      background: #573e37;
-      width: 4rem;
-      height: 4rem;
-      position: fixed;
-      right: 0;
-      top: 0;
-      border-radius: 50%;
+  }
+  .menu {
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    cursor: pointer;
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+
+    svg {
+      width: 70%;
+      height: 70%;
+    }
+  }
+  .closeMenu {
+    background: #573e37;
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+  }
 .menuX{
 color: #fff;
 position: fixed;
@@ -130,33 +133,31 @@ flex-direction: column;
 height: 100vh;
 
 svg{
-  cursor: pointer;
-  width: 1.5rem;
-  height: 1.5rem;
-  position: absolute;
-  top: 2rem;
-  right: 5rem;
+cursor: pointer;
+width: 1.5rem;
+height: 1.5rem;
+position: absolute;
+top: 2rem;
+right: 5rem;
 
 }
 li{
-  list-style: none;
-  margin-top: 1rem;
+list-style: none;
+margin-top: 1rem;
 
-  a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.5rem;
-    opacity: 0.6;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
 
-    &:hover{
-      opacity: 1;
-    }
+  &:hover{
+    opacity: 1;
   }
 }
 }
-
-  }
+}
 
 }

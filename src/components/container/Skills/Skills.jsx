@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Skills.scss'
-import { icons } from '../../../Data'
+import { icons, experiences, finishes } from '../../../Data'
 
 function Skills() {
   const [active, setActive] = useState(1)
@@ -37,6 +37,19 @@ function Skills() {
               </div>
             )
           })}
+      </div>
+      <div className="experiences">
+      {active === 2 && experiences.map(experience => {
+          return (
+            <div className="experience" key={experience.id}>
+              <span>{experience.year}</span>
+              <div className="position">
+                <h3>{experience.position}</h3>
+                <p>{experience.company}</p>
+              </div>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
