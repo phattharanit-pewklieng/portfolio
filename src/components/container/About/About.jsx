@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.scss'
-import portfolio from '../../../assets/img-1.jpeg'
+import portfolio from '../../../assets/img-3.jpeg'
 import { bios } from '../../../Data'
 import { motion } from 'framer-motion'
 

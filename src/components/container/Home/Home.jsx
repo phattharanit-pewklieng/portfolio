@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.scss'
-import portfolio from '../../../assets/phatt-img.jpeg'
+import portfolio from '../../../assets/img-2.jpg'
 import { motion } from 'framer-motion'
 function Home() {
   const moveVariants = {
