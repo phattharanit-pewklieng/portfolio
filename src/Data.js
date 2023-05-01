@@ -9,13 +9,14 @@ import {
   FaUser,
   FaMapMarkerAlt,
   FaPaperPlane,
-  FaDribbble,
-  FaInstagram,
   FaLinkedin,
+  FaGithub,
+  FaFacebook,
+  FaDiscord,
 } from 'react-icons/fa'
 import { DiJavascript } from 'react-icons/di'
 import { SiTypescript } from 'react-icons/si'
-import { BsMedium } from 'react-icons/bs'
+// import { BsMedium } from 'react-icons/bs'
 // import portfolio from "./assets/portfolio.jpg"
 import web1 from './assets/web1.png'
 import web2 from './assets/web2.png'
@@ -27,10 +28,21 @@ import web4 from './assets/web4.png'
 export const navLinks = ['home', 'about', 'skills', 'portfolio', 'contact']
 
 export const socialIcons = [
-  <FaDribbble />,
-  <FaInstagram />,
-  <FaLinkedin />,
-  <BsMedium />,
+  {
+    name: 'Linkedin',
+    icon: <FaLinkedin />,
+    url: 'https://www.linkedin.com/in/phattharanit-pewklieng-845752122/'
+  },
+  {
+    name: 'Github',
+    icon: <FaGithub />,
+    url: 'https://github.com/phattharanit-pewklieng'
+  },
+  {
+    name: 'Discord',
+    icon: <FaDiscord />,
+    url: 'Phatt-Pewklieng-2023_Harakeke-23#2007'
+  }
 ]
 
 export const bios = [

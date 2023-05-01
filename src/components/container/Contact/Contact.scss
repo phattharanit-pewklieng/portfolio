@@ -51,6 +51,7 @@
       display: flex;
       margin-top: 1.40rem;
       
+      
   
       div{
         margin-right: 1rem;
@@ -58,13 +59,13 @@
         transition: all 0.3s ease;
 
         &:hover{
-          opacity: 0.8;
-          color: #9db4f4;
+          opacity: 0.7;
+          
         }
 
         svg{
-          font-size: 1.3rem;
-         
+          font-size: 1.5rem;
+          opacity: 1;
         }
       }
     }
@@ -92,11 +93,12 @@
         font-family: "Poppins";
         border-radius: 5px;
         font-size: 0.85rem;
+       
       }
       textarea{ 
         border: none;
                 outline: none;
-                margin-bottom: 0.5rem;
+                
                 padding: 1rem 1.5rem;
                 background: #d4c4bc;
                 border-radius: 5px;
@@ -110,16 +112,19 @@
 
     .btn{
       margin-top: 1rem;
-      background: #573e37;
       padding: 0.65rem 1rem;
       border-radius: 10px;
-      width: 4.2rem;
+      font-size: 1rem;
+      color: #573e37;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      cursor: pointer;
     }
-      a{
-        text-decoration: none;
-        color: #fff;
-        text-transform: capitalize;
-      }
+        button{
+          
+            background: #d4c4bc;
+          }
     }
   }
 

@@ -44,10 +44,16 @@ function Navbar() {
           })}
         </ul>
         <div className="social_icons">
-          {socialIcons.map((socialIcon, index) => {
-            return <div key={index}>{socialIcon}</div>
+            {socialIcons.map((socialIcon, index) => {
+            return (
+              <div key={index} >
+                <a href={socialIcon.url}>
+                {socialIcon.icon}
+                </a>
+              </div>
+            )
           })}
-        </div>
+          </div>
         <div className="menu">
           <HiMenuAlt4
             onClick={() => {
