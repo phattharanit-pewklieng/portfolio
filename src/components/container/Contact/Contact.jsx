@@ -6,10 +6,12 @@ import { motion } from 'framer-motion'
 function Contact() {
   return (
     <div className="container" id="contact">
-      <div className="title">
+      <motion.div
+        initial={{opacity: 0}}
+        whileInView={{y: [-50, 0], opacity: 1}} className="title">
         <span>get in touch</span>
         <h1>Contact Me</h1>
-      </div>
+      </motion.div>
       <div className="contact_form">
         <div className="contact_left_container">
           <h3>Just Say Hi!</h3>
