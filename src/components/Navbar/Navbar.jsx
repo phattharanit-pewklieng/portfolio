@@ -26,8 +26,8 @@ function Navbar() {
   }, [])
   return (
     <motion.div
-          initial={{ y: -25 }}
-          animate={{ y: -5 }}
+          initial={{ y: -15 }}
+          animate={{ y: -1 }}
           transition={{duration: 0.5}}
           className={scroll ? "header active" : "header"}>
       <div className="Nav_container">

@@ -68,8 +68,16 @@ function Portfolio() {
               transition={{duration: 0.3 , ease: "easeInOut"}}
               className='hoverLayer'
             >
-                
-              <motion.a href='#'
+              <div className='workDetail'>
+               <h3>{work.name}</h3>
+               <p className='stick'></p>
+               <p> {work.descriptions}</p>
+               <h4>{work.tech}</h4>
+               <p>{work.reflections}</p>
+               <p className='stick'></p>
+               <p className='status'>{work.status}</p>
+               </div>
+              <motion.a href={work.gitHubUrl}
               whileInView={{scale: [0,1]}}
                whileHover={{scale: [1, 1.1]}}
                transition={{duration: 0.3}}

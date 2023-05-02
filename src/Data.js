@@ -31,18 +31,18 @@ export const socialIcons = [
   {
     name: 'Linkedin',
     icon: <FaLinkedin />,
-    url: 'https://www.linkedin.com/in/phattharanit-pewklieng-845752122/'
+    url: 'https://www.linkedin.com/in/phattharanit-pewklieng-845752122/',
   },
   {
     name: 'Github',
     icon: <FaGithub />,
-    url: 'https://github.com/phattharanit-pewklieng'
+    url: 'https://github.com/phattharanit-pewklieng',
   },
   {
     name: 'Discord',
     icon: <FaDiscord />,
-    url: 'Phatt-Pewklieng-2023_Harakeke-23#2007'
-  }
+    url: 'Phatt-Pewklieng-2023_Harakeke-23#2007',
+  },
 ]
 
 export const bios = [
@@ -129,31 +129,68 @@ export const workImages = [
   {
     id: 1,
     img: web1,
-    name: 'project 1',
-    category: 'web',
+    name: 'Movie App',
+    descriptions:
+      'This web application that provides a comprehensive list of movies and enables users to search for their preferred movies.',
+    tech: 'ReactJs, Redux ToolKit',
+    reflections:
+      'Discover how to utilize Redux to efficiently manage state and retrieve data from an API.',
+    status: 'Completed',
+    category: 'practise',
+    gitHubUrl: 'https://github.com/phattharanit-pewklieng',
+    viewUrl: 'https://github.com/phattharanit-pewklieng',
   },
 
   {
     id: 2,
     img: web2,
-    name: 'project 2',
-    category: 'web',
+    name: 'Shopping Cart',
+    descriptions:
+      'This web application enables users to shop, add products to their cart, and remove items from it.',
+    tech: 'Vite, React, TypeScript, and Bootstrap',
+    reflections:
+      'Improve my knowledge of building shopping carts with Bootstrap and TypeScript',
+    status: 'Completed',
+    category: 'practise',
+    gitHubUrl: 'https://github.com/phattharanit-pewklieng',
+    viewUrl: 'https://github.com/phattharanit-pewklieng',
   },
   {
     id: 3,
     img: web3,
-    name: 'project 3',
-    category: 'app',
+    name: 'Meal-Magic',
+    descriptions:
+      'This web application lets users search for recipes based on the ingredients they have',
+    tech: 'ReactJs, API',
+    reflections: 'Learn how to fetch data from an API using an API key',
+    status: 'In progress ...',
+    category: 'personal project',
+    gitHubUrl: 'https://github.com/phattharanit-pewklieng/Meal-Magic',
+    viewUrl: 'https://github.com/phattharanit-pewklieng/Meal-Magic',
   },
   {
     id: 4,
     img: web4,
-    name: 'project 4',
+    name: 'Waitless',
+    descriptions:
+      'This web application allows customers to order food by scanning a QR code, which is then sent directly to the kitchen. Staff members can also manage food items by adding, deleting, and editing them as needed.',
+    tech: 'React, TypeScript, Tailwind, Jest-UnitTesting',
+    reflections:
+      'As a team, we built Full Stack web applications while also deepening our understanding of unit testing and the Tailwind CSS framework.',
+    status: 'Completed',
     category: 'group project',
+    gitHubUrl: 'https://github.com/harakeke-2023/Waitless',
+    viewUrl: 'https://github.com/harakeke-2023/Waitless',
   },
 ]
 
-export const workNavs = ['All', 'Web', 'App', 'Design', 'Group Project']
+export const workNavs = [
+  'All',
+  'Practise',
+  'Personal Project',
+  'Group Project',
+  'Design',
+]
 
 export const contacts = [
   {

@@ -1,23 +1,24 @@
 import React, { useState } from 'react'
 import './Skills.scss'
-import { icons, experiences, finishes } from '../../../Data'
-import { motion } from 'framer-motion';
+import { icons, experiences } from '../../../Data'
+// import { finishes } from '../../../Data'
+import { motion } from 'framer-motion'
 
 function Skills() {
   const [active, setActive] = useState(1)
   return (
     <div className="container" id="skills">
-       <motion.div
-        initial={{opacity: 0}}
-        whileInView={{y: [-50, 0], opacity: 1}}  
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
         className="title"
       >
         <span>What I Expert</span>
         <h1>Skills And Experience</h1>
-        </motion.div>
+      </motion.div>
       <motion.div
-        initial={{opacity: 0}}
-        whileInView={{y: [-50, 0], opacity: 1}}
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
         className="select"
       >
         <button
@@ -36,10 +37,10 @@ function Skills() {
         >
           Experience
         </button>
-        </motion.div>
+      </motion.div>
       <motion.div
-        initial={{opacity: 0}}
-        whileInView={{y: [-50, 0], opacity: 1}}
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
         className="skills"
       >
         {active === 1 &&
@@ -50,25 +51,26 @@ function Skills() {
               </div>
             )
           })}
-        </motion.div>
+      </motion.div>
       <motion.div
-        initial={{opacity: 0}}
-        whileInView={{y: [-50, 0], opacity: 1}}
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
         className="experiencs"
       >
-      {active === 2 && experiences.map(experience => {
-          return (
-            <div className="experience" key={experience.id}>
-              <span>{experience.year}</span>
-              <div className="position">
-                <h3>{experience.position}</h3>
-                <p>{experience.company}</p>
+        {active === 2 &&
+          experiences.map((experience) => {
+            return (
+              <div className="experience" key={experience.id}>
+                <span>{experience.year}</span>
+                <div className="position">
+                  <h3>{experience.position}</h3>
+                  <p>{experience.company}</p>
+                </div>
               </div>
-            </div>
-          )
-        })}
-       </motion.div>
-      <motion.div
+            )
+          })}
+      </motion.div>
+      {/* <motion.div
         initial={{opacity: 0}}
         whileInView={{y: [-50, 0], opacity: 1}}
         className="finishes_container"
@@ -81,7 +83,7 @@ function Skills() {
           </div>
           )
         })}
-      </motion.div>
+      </motion.div> */}
     </div>
   )
 }
