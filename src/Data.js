@@ -22,7 +22,7 @@ import web1 from './assets/web1.png'
 import web2 from './assets/web2.png'
 import web3 from './assets/web3.png'
 import web4 from './assets/web4.png'
-// import work5 from "./assets/work5.png";
+import web5 from "./assets/web5.png";
 // import work6 from "./assets/work6.png";
 
 export const navLinks = ['home', 'about', 'skills', 'portfolio', 'contact']
@@ -134,11 +134,11 @@ export const workImages = [
       'This web application that provides a comprehensive list of movies and enables users to search for their preferred movies.',
     tech: 'ReactJs, Redux ToolKit',
     reflections:
-      'Discover how to utilize Redux to efficiently manage state and retrieve data from an API.',
+      'Discover how to efficiently manage state and retrieve data from an API using Redux, and also how to add different categories of movies.',
     status: 'Completed',
     category: 'practise',
-    gitHubUrl: 'https://github.com/phattharanit-pewklieng',
-    viewUrl: 'https://github.com/phattharanit-pewklieng',
+    gitHubUrl: 'https://github.com/phattharanit-pewklieng/movie-app',
+    viewUrl: 'https://github.com/phattharanit-pewklieng/movie-app',
   },
 
   {
@@ -152,8 +152,8 @@ export const workImages = [
       'Improve my knowledge of building shopping carts with Bootstrap and TypeScript',
     status: 'Completed',
     category: 'practise',
-    gitHubUrl: 'https://github.com/phattharanit-pewklieng',
-    viewUrl: 'https://github.com/phattharanit-pewklieng',
+    gitHubUrl: 'https://github.com/phattharanit-pewklieng/shopping-cart',
+    viewUrl: 'https://github.com/phattharanit-pewklieng/shopping-cart',
   },
   {
     id: 3,
@@ -165,8 +165,8 @@ export const workImages = [
     reflections: 'Learn how to fetch data from an API using an API key',
     status: 'In progress ...',
     category: 'personal project',
-    gitHubUrl: 'https://github.com/phattharanit-pewklieng/Meal-Magic',
-    viewUrl: 'https://github.com/phattharanit-pewklieng/Meal-Magic',
+    gitHubUrl: 'https://github.com/phattharanit-pewklieng/meal-magic',
+    viewUrl: 'https://github.com/phattharanit-pewklieng/meal-magic',
   },
   {
     id: 4,
@@ -181,6 +181,20 @@ export const workImages = [
     category: 'group project',
     gitHubUrl: 'https://github.com/harakeke-2023/Waitless',
     viewUrl: 'https://github.com/harakeke-2023/Waitless',
+  },
+  {
+    id: 5,
+    img: web5,
+    name: 'Flimflix',
+    descriptions:
+      'This web application enables users to search for and select various types of movies.',
+    tech: 'React, TypeScript, API, CSS',
+    reflections:
+      'As a team has developed web applications that can fetch both image and data from an API and display them. Additionally, the team is striving to gain a deeper understanding of the API',
+    status: 'Completed',
+    category: 'group project',
+    gitHubUrl: 'https://github.com/harakeke-2023/Flimflix',
+    viewUrl: 'https://github.com/harakeke-2023/Flimflix',
   },
 ]
 
