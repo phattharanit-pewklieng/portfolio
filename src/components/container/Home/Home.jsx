@@ -50,9 +50,16 @@ function Home() {
         >
           connect with me
         </motion.a>
-        <div className="web">Web Developer</div>
+
+        {/* Excellent communication skills
+        Strong attention to detail
+        Proficient in [relevant software/tools]
+        Skilled in problem solving and analytical thinking
+        Exceptional leadership and mentorship skills */}
+
+        {/* <div className="web">Web Developer</div>
         <div className="ui">UI/UX Designer</div>
-        <div className="freelance">Freelance</div>
+        <div className="freelance">Freelance</div> */}
       </div>
       </motion.div>
   )

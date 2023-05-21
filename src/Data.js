@@ -22,7 +22,13 @@ import web1 from './assets/web1.png'
 import web2 from './assets/web2.png'
 import web3 from './assets/web3.png'
 import web4 from './assets/web4.png'
-import web5 from "./assets/web5.png";
+import web5 from './assets/web5.png'
+import web6 from './assets/web6.png'
+import web7 from './assets/web7.png'
+import design1 from './assets/d01.png'
+import design2 from './assets/d02.jpeg'
+import design3 from './assets/d03.jpeg'
+import web8 from './assets/web8.png'
 // import work6 from "./assets/work6.png";
 
 export const navLinks = ['home', 'about', 'skills', 'portfolio', 'contact']
@@ -195,6 +201,87 @@ export const workImages = [
     category: 'group project',
     gitHubUrl: 'https://github.com/harakeke-2023/Flimflix',
     viewUrl: 'https://github.com/harakeke-2023/Flimflix',
+  },
+  {
+    id: 6,
+    img: web6,
+    name: 'Weather App',
+    descriptions:
+      'This web application also allows users to search the weather in different cities.',
+    tech: 'React, API , CSS, Vite',
+    reflections:
+      'This web application also allows users to search the weather in different cities',
+    status: 'Completed',
+    category: 'practise',
+    gitHubUrl: 'https://github.com/harakeke-2023/Flimflix',
+    viewUrl: 'https://github.com/harakeke-2023/Flimflix',
+  },
+  {
+    id: 7,
+    img: web7,
+    name: 'ChatABC',
+    descriptions:
+      'This web application allows users to ask any question to a chat bot powered by Chat GPT',
+    tech: 'React, API from GPT 3.5, CSS',
+    reflections: 'It works by responding with auto-generated chat messages',
+    status: 'Completed',
+    category: 'practise',
+    gitHubUrl: 'https://github.com/harakeke-2023/Flimflix',
+    viewUrl: 'https://github.com/harakeke-2023/Flimflix',
+  },
+  {
+    id: 8,
+    img: design3,
+    name: 'Restaurant Business front-card',
+    descriptions:
+      'The design is specifically crafted for a restaurant, serving as an effective promotional tool, leaving a lasting impression on potential customers. ',
+    tech: 'Photoshop, hexadecimal palette picker.',
+    reflections: `The design is specifically crafted for a restaurant, serving as an effective promotional tool, leaving a lasting impression on potential customers.`,
+    status: 'Completed',
+    category: 'Design',
+    gitHubUrl: '',
+    viewUrl: '',
+  },
+  {
+    id: 9,
+    img: design2,
+    name: 'Restaurant Business back-card',
+    descriptions:
+      'The design is specifically crafted for a restaurant, serving as an effective promotional tool, leaving a lasting impression on potential customers. ',
+    tech: 'Photoshop, hexadecimal palette picker.',
+    reflections: `Through the use of Photoshop, designing the business card for the restaurant was an exciting and rewarding experience. The software's wide array of tools and features allowed for precise control over every design aspect.`,
+    status: 'Completed',
+    category: 'Design',
+    gitHubUrl: '',
+    viewUrl: '',
+  },
+  {
+    id: 10,
+    img: design1,
+    name: 'Menu',
+    descriptions:
+      'This menu design is intended for a restaurant and focuses on two main aspects: meat options and levels of spiciness. ',
+    tech: 'Photoshop, hexadecimal palette picker.',
+    reflections:
+      'Photoshop empowered me to design a visually appealing menu by offering flexibility, precise image editing, and enhanced productivity. I experimented with various design elements, fine-tuned layouts, and elevated visuals through color adjustments, filters, and image retouching.',
+    status: 'Completed',
+    category: 'Design',
+    gitHubUrl: '',
+    viewUrl: '',
+  },
+  {
+    id: 11,
+    img: web8,
+    name: 'My photo gallery',
+    descriptions:
+      'This is a website designed to showcase my photo gallery, allowing users to view my images. ',
+    tech: 'CSS, JavaScript, and HTML.',
+    reflections:
+      'Building this website to showcase my photo gallery using CSS, JavaScript, and HTML was a fulfilling experience. I successfully created a visually appealing and user-friendly platform for visitors to view my images.',
+    status: 'Completed',
+    category: 'Personal Project',
+    gitHubUrl: 'https://github.com/phattharanit-pewklieng/lightbox',
+    viewUrl: 'https://phattharanit-pewklieng.github.io/lightbox/',
   },
 ]
 

@@ -85,7 +85,7 @@ function Portfolio() {
                 <FiGithub />
               </motion.a>
                 
-              <motion.a href='#'
+              <motion.a href={work.viewUrl}
               whileInView={{scale: [0,1]}}
                whileHover={{scale: [1, 1.1]}}
                transition={{duration: 0.3}}
