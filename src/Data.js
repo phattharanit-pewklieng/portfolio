@@ -11,7 +11,7 @@ import {
   FaPaperPlane,
   FaLinkedin,
   FaGithub,
-  FaFacebook,
+  // FaFacebook,
   FaDiscord,
 } from 'react-icons/fa'
 import { DiJavascript } from 'react-icons/di'
@@ -29,6 +29,7 @@ import design1 from './assets/d01.png'
 import design2 from './assets/d02.jpeg'
 import design3 from './assets/d03.jpeg'
 import web8 from './assets/web8.png'
+import web9 from './assets/web9.png'
 // import work6 from "./assets/work6.png";
 
 export const navLinks = ['home', 'about', 'skills', 'portfolio', 'contact']
@@ -281,6 +282,20 @@ export const workImages = [
     status: 'Completed',
     category: 'Personal Project',
     gitHubUrl: 'https://github.com/phattharanit-pewklieng/lightbox',
+    viewUrl: 'https://phattharanit-pewklieng.github.io/lightbox/',
+  },
+  {
+    id: 12,
+    img: web9,
+    name: 'Healthy Web App',
+    descriptions:
+      'Our healthy web app offers nutritious food recipes, diet guidelines, weight loss tips, and exercise recommendations.',
+    tech: 'Tailwind CSS, Next.js, and linking functionality',
+    reflections:
+      'Developing the healthy web app deepened my understanding of Next.js and Tailwind CSS. Implementing linking functionality in Next.js improved navigation, while optimizing performance was a priority.',
+    status: 'In progress ...',
+    category: 'Personal Project',
+    gitHubUrl: 'https://github.com/phattharanit-pewklieng/healthy-app',
     viewUrl: 'https://phattharanit-pewklieng.github.io/lightbox/',
   },
 ]
