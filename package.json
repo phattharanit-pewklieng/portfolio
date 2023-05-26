@@ -1,4 +1,5 @@
 {
+  "homepage": "https://phattharanit-pewklieng.github.io/portfolio/",
   "name": "portfolio1",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +21,6 @@
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
-  "homepage": "https://phattharanit-pewklieng.github.io/portfolio/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -49,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "webpack": "^5.81.0"
   }
 }
