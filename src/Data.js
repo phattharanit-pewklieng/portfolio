@@ -30,6 +30,7 @@ import design2 from './assets/d02.jpeg'
 import design3 from './assets/d03.jpeg'
 import web8 from './assets/web8.png'
 import web9 from './assets/web9.png'
+import web10 from './assets/web10.png'
 // import work6 from "./assets/work6.png";
 
 export const navLinks = ['home', 'about', 'skills', 'portfolio', 'contact']
@@ -289,7 +290,7 @@ export const workImages = [
     img: web9,
     name: 'Healthy Web App',
     descriptions:
-      'Our healthy web app offers nutritious food recipes, diet guidelines, weight loss tips, and exercise recommendations.',
+      'My healthy web app offers nutritious food recipes, diet guidelines, weight loss tips, and exercise recommendations.',
     tech: 'Tailwind CSS, Next.js, and linking functionality',
     reflections:
       'Developing the healthy web app deepened my understanding of Next.js and Tailwind CSS. Implementing linking functionality in Next.js improved navigation, while optimizing performance was a priority.',
@@ -297,6 +298,20 @@ export const workImages = [
     category: 'Personal Project',
     gitHubUrl: 'https://github.com/phattharanit-pewklieng/healthy-app',
     viewUrl: 'https://phattharanit-pewklieng.github.io/lightbox/',
+  },
+  {
+    id: 13,
+    img: web10,
+    name: 'Travel Planing',
+    descriptions:
+      'This web app allows users to take notes, plan their trips, and track their budget and expenses. It also has plans for future enhancements, future function including the ability to upload images',
+    tech: 'CSS, vite, java script',
+    reflections:
+      'Implemented positioning of all elements on the website, added functionality for refreshing forms, gained knowledge in web development.',
+    status: 'In progress ...',
+    category: 'Personal Project',
+    gitHubUrl: 'https://github.com/phattharanit-pewklieng/travel-plan',
+    viewUrl: 'https://phattharanit-pewklieng.github.io/travel-plan/',
   },
 ]
 

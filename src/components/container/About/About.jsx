@@ -44,7 +44,7 @@ function About() {
             )
           })}
           <motion.a
-            href='/phattharanit_cv23.pdf'
+            href='/phattharanit_cv_23.pdf'
             download=""
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
