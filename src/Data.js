@@ -31,6 +31,7 @@ import design3 from './assets/d03.jpeg'
 import web8 from './assets/web8.png'
 import web9 from './assets/web9.png'
 import web10 from './assets/web10.png'
+import web11 from './assets/web11.png'
 // import work6 from "./assets/work6.png";
 
 export const navLinks = ['home', 'about', 'skills', 'portfolio', 'contact']
@@ -147,6 +148,7 @@ export const workImages = [
     category: 'practise',
     gitHubUrl: 'https://github.com/phattharanit-pewklieng/movie-app',
     viewUrl: 'https://github.com/phattharanit-pewklieng/movie-app',
+    activeButton: 'image',
   },
 
   {
@@ -162,6 +164,7 @@ export const workImages = [
     category: 'practise',
     gitHubUrl: 'https://github.com/phattharanit-pewklieng/shopping-cart',
     viewUrl: 'https://github.com/phattharanit-pewklieng/shopping-cart',
+    activeButton: 'image'
   },
   {
     id: 3,
@@ -175,6 +178,7 @@ export const workImages = [
     category: 'personal project',
     gitHubUrl: 'https://github.com/phattharanit-pewklieng/meal-magic',
     viewUrl: 'https://github.com/phattharanit-pewklieng/meal-magic',
+    activeButton: 'image'
   },
   {
     id: 4,
@@ -189,6 +193,7 @@ export const workImages = [
     category: 'group project',
     gitHubUrl: 'https://github.com/harakeke-2023/Waitless',
     viewUrl: 'https://github.com/harakeke-2023/Waitless',
+    activeButton: 'image'
   },
   {
     id: 5,
@@ -203,6 +208,7 @@ export const workImages = [
     category: 'group project',
     gitHubUrl: 'https://github.com/harakeke-2023/Flimflix',
     viewUrl: 'https://github.com/harakeke-2023/Flimflix',
+    activeButton: 'image'
   },
   {
     id: 6,
@@ -217,6 +223,7 @@ export const workImages = [
     category: 'practise',
     gitHubUrl: 'https://github.com/harakeke-2023/Flimflix',
     viewUrl: 'https://github.com/harakeke-2023/Flimflix',
+    activeButton: 'image'
   },
   {
     id: 7,
@@ -230,6 +237,7 @@ export const workImages = [
     category: 'practise',
     gitHubUrl: 'https://github.com/harakeke-2023/Flimflix',
     viewUrl: 'https://github.com/harakeke-2023/Flimflix',
+    activeButton: 'image'
   },
   {
     id: 8,
@@ -243,6 +251,7 @@ export const workImages = [
     category: 'Design',
     gitHubUrl: '',
     viewUrl: '',
+    activeButton: 'image'
   },
   {
     id: 9,
@@ -256,6 +265,7 @@ export const workImages = [
     category: 'Design',
     gitHubUrl: '',
     viewUrl: '',
+    activeButton: 'image'
   },
   {
     id: 10,
@@ -270,6 +280,7 @@ export const workImages = [
     category: 'Design',
     gitHubUrl: '',
     viewUrl: '',
+    activeButton: 'image'
   },
   {
     id: 11,
@@ -284,6 +295,7 @@ export const workImages = [
     category: 'Personal Project',
     gitHubUrl: 'https://github.com/phattharanit-pewklieng/lightbox',
     viewUrl: 'https://phattharanit-pewklieng.github.io/lightbox/',
+    activeButton: 'image'
   },
   {
     id: 12,
@@ -297,7 +309,8 @@ export const workImages = [
     status: 'In progress ...',
     category: 'Personal Project',
     gitHubUrl: 'https://github.com/phattharanit-pewklieng/healthy-app',
-    viewUrl: 'https://phattharanit-pewklieng.github.io/lightbox/',
+    viewUrl: 'https://phattharanit-pewklieng.github.io/healthy-app/',
+    activeButton: 'image'
   },
   {
     id: 13,
@@ -312,6 +325,22 @@ export const workImages = [
     category: 'Personal Project',
     gitHubUrl: 'https://github.com/phattharanit-pewklieng/travel-plan',
     viewUrl: 'https://phattharanit-pewklieng.github.io/travel-plan/',
+    activeButton: 'image'
+  },
+  {
+    id: 14,
+    img: web11,
+    name: 'Thai Restaurant Web App',
+    descriptions:
+      'This web app provides an interactive platform for customers to explore the menu, place online orders. It also includes plans for future enhancements, such as the ability to upload images for a visual representation of our dishes, booking table.',
+    tech: 'CSS, Tailwind CSS, JavaScript',
+    reflections:
+      'Successfully implemented the layout and positioning of all elements on the website using CSS and Tailwind CSS. Developed interactive features for online ordering and gained valuable knowledge and experience in web development',
+    status: 'In progress ...',
+    category: 'Personal Project',
+    gitHubUrl: 'https://github.com/phattharanit-pewklieng/travel-plan',
+    viewUrl: 'https://phattharanit-pewklieng.github.io/travel-plan/',
+    activeButton: 'image'
   },
 ]
 

@@ -30,11 +30,21 @@ function Portfolio() {
   const handleImageClick = (work) => {
     setSelectedWork(work)
     setShowDetails(false)
+    const updatedWorks = works.map((w) => ({
+      ...w,
+      activeButton: w.id === work.id ? 'image' : w.activeButton,
+    }))
+    setWork(updatedWorks)
   }
 
   const handleDetailsClick = (work) => {
     setSelectedWork(work)
     setShowDetails(true)
+    const updatedWorks = works.map((w) => ({
+      ...w,
+      activeButton: w.id === work.id ? 'details' : w.activeButton,
+    }))
+    setWork(updatedWorks)
   }
 
   return (
@@ -76,14 +86,32 @@ function Portfolio() {
           return (
             <div className="workImage" key={work.id}>
               <div className="workTabButtons">
-                <button className='buttonWork' onClick={() => handleImageClick(work)}>Img</button>
-                <button className='buttonWork' onClick={() => handleDetailsClick(work)}>Detail</button>
+                <button
+                  className={
+                    work.activeButton === 'image'
+                      ? 'buttonWork active'
+                      : 'buttonWork'
+                  }
+                  onClick={() => handleImageClick(work)}
+                >
+                  Img
+                </button>
+                <button
+                  className={
+                    work.activeButton === 'details'
+                      ? 'buttonWork active'
+                      : 'buttonWork'
+                  }
+                  onClick={() => handleDetailsClick(work)}
+                >
+                  Detail
+                </button>
               </div>
-              
-                <div className="imageTab">
-                  <img src={work.img} alt="workImg" />
-                </div>
-              
+
+              <div className="imageTab">
+                <img src={work.img} alt="workImg" />
+              </div>
+
               {showDetails && selectedWork && selectedWork.id === work.id && (
                 <div className="messageTab">
                   <motion.div
