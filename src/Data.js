@@ -338,8 +338,8 @@ export const workImages = [
       'Successfully implemented the layout and positioning of all elements on the website using CSS and Tailwind CSS. Developed interactive features for online ordering and gained valuable knowledge and experience in web development',
     status: 'In progress ...',
     category: 'Personal Project',
-    gitHubUrl: 'https://github.com/phattharanit-pewklieng/travel-plan',
-    viewUrl: 'https://phattharanit-pewklieng.github.io/travel-plan/',
+    gitHubUrl: 'https://github.com/phattharanit-pewklieng/pokpok-resturant',
+    viewUrl: 'https://phattharanit-pewklieng.github.io/pokpok-resturant/',
     activeButton: 'image'
   },
 ]
